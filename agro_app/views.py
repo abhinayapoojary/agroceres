@@ -1,12 +1,11 @@
-from django.shortcuts import render
-
 # Create your views here.
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from agro_app import list_mandal
 from agro_app import process_mandal
-
+from agro_app import process_month
+from agro_app import list_crop
 
 @csrf_exempt
 def display(request):
@@ -51,3 +50,21 @@ def select_mandal(request):
 
         process_mandal.process_mandal(select_mandals[0])
         return render(request, 'output1.html')
+
+
+@csrf_exempt
+def select_month(request):
+    if request.method == 'GET':
+        return render(request, 'select_month.html')
+
+    if request.method == 'POST':
+        selected_month = request.POST.get('selected_month')
+        selected_day = request.POST.get('day')
+        response = process_month.process_month(selected_month, selected_day)
+        return HttpResponse(response, status=200)
+
+
+def get_crops(request):
+    if request.method == 'GET':
+        crops = list_crop.list_crop()
+        return render(request, 'select_crop.html', {"crops": crops})

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGROCERES | SELECT STATE</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <style>
+        .category {
+            height: 270px;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-dark orange lighten-1">
+    <a class="navbar-brand" href="#">
+        <img src="{% static "logo.png" %}" height="30" class="d-inline-block align-top"
+             alt="mdb logo"> <b>AGROCERES | SELECT MONTH</b>
+    </a>
+</nav>
+
+<div class="container mt-5 main-block">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" name="month" id="jan" value="1">
+                                <label class="custom-control-label" for="jan">January</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="feb" value="2" name="month">
+                                <label class="custom-control-label" for="feb">February</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="mar" value="3" name="month">
+                                <label class="custom-control-label" for="mar">March</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="apr" name="month" value="4">
+                                <label class="custom-control-label" for="apr">April</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="may" name="month" value="5">
+                                <label class="custom-control-label" for="may">May</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="june"
+                                       name="month" value="6">
+                                <label class="custom-control-label" for="june">June</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" name="month" value="7" id="july">
+                                <label class="custom-control-label" for="july">July</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="aug" name="month" value="8">
+                                <label class="custom-control-label" for="aug">August</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="sep" name="month" value="9">
+                                <label class="custom-control-label" for="sep">September</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="oct" name="month" value="10">
+                                <label class="custom-control-label" for="oct">October</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="nov" name="month" value="11">
+                                <label class="custom-control-label" for="nov">November</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <input type="radio" class="custom-control-input" id="dec"
+                                       name="month" value="12">
+                                <label class="custom-control-label" for="dec">December</label>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5" id="day-block">
+        <div class="col-md-4">
+            <label for="day"><b>Enter Date</b></label>
+            <input type="number" placeholder="Example: 25" class="form-control" id="day" pattern="[0-9]*"/>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <button type="button" id="getMonth" class="btn btn-warning" style="float: right">PROCEED</button>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5 output-block" style="display: none">
+    <div class="row image">
+        <div class="col-md-12 text-center">
+            <img src="{% static 'season_graph.png' %}"/>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <h3 class="result text-center"></h3>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12">
+            <a href="{% url 'home' %}" type="submit" class="btn btn-warning" style="float: right">BACK TO HOME</a>
+        </div>
+    </div>
+</div>
+
+<!-- JQuery -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#getMonth').click((e) => {
+            e.preventDefault()
+
+            let selected_month = $('input[name="month"]:checked').val();
+            let day = $('#day').val()
+
+            $.ajax({
+                type: 'POST',
+                url: 'http://127.0.0.1:8000/select_month/',
+                data: {
+                    selected_month: selected_month,
+                    day: day,
+                    csrfmiddlewaretoken: '{{ csrf_token }}'
+                },
+
+                success: function (xhr) {
+                    console.log("success")
+                    console.log(xhr)
+                    $('.main-block').hide()
+
+                    if(xhr === "Recommend not to seed or plant, start from July")
+                        $('.image').hide()
+
+                    $('.result').html(xhr)
+
+                    $('.output-block').show()
+                },
+
+                error: function (xhr) {
+                    console.log("error")
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>

@@ -100,35 +100,35 @@ lst_karif  = [3,2,1,0]
 if month == 10:
     day = int(input("Enter day"))
     rem_day = 31 - day
-    print(rem_day,"day ",lst_rabi[0],"month remaing for grow")
+    print("Optimum result within: \n ", lst_rabi[0], "month", rem_day, "days")
     df_3.drop(["Area Kharif","Production Kharif","Yeild Kharif","percentage_karif_growth"],axis=1,inplace=True)
     df_3 = df_3[df_3['percentage_rabi_growth']>=10]
     out_rabi()
 if month == 11:
      day = int(input("Enter day"))
      rem_day = 31 - day
-     print(rem_day,"day ",lst_rabi[1],"month remaing for grow")
+     print("Optimum result within: \n ", lst_rabi[1], "month", rem_day, "days")
      df_3.drop(["Area Kharif","Production Kharif","Yeild Kharif","percentage_karif_growth"],axis=1,inplace=True)
      df_3 = df_3[df_3['percentage_rabi_growth']>=10]
      out_rabi()
 if month == 12:
      day = int(input("Enter day"))
      rem_day = 31 - day
-     print(rem_day,"day ",lst_rabi[2],"month remaing for grow")
+     print("Optimum result within: \n ", lst_rabi[2], "month", rem_day, "days")
      df_3.drop(["Area Kharif","Production Kharif","Yeild Kharif","percentage_karif_growth"],axis=1,inplace=True)
      df_3 = df_3[df_3['percentage_rabi_growth']>=10]
      out_rabi()
 if month == 1:
     day = int(input("Enter day"))
     rem_day = 31 - day
-    print(rem_day,"day ",lst_rabi[3],"month remaing for grow")
+    print("Optimum result within: \n ", lst_rabi[3], "month", rem_day, "days")
     df_3.drop(["Area Kharif","Production Kharif","Yeild Kharif","percentage_karif_growth"],axis=1,inplace=True)
     df_3 = df_3[df_3['percentage_rabi_growth']>=10]
     out_rabi()
 if month == 2:
     day = int(input("Enter day"))
     rem_day = 31 - day
-    print(rem_day,"day ",lst_rabi[4],"month remaing for grow")
+    print("Optimum result within: \n ", lst_rabi[4], "month", rem_day, "days")
     df_3.drop(["Area Kharif","Production Kharif","Yeild Kharif","percentage_karif_growth"],axis=1,inplace=True)
     df_3 = df_3[df_3['percentage_rabi_growth']>=10]
     out_rabi()
@@ -143,28 +143,28 @@ if month == 6:
 if month == 7:
     day = int(input("Enter day"))
     rem_day = 31 - day
-    print(rem_day,"day ",lst_karif[0],"month remaing for grow")
+    print("Optimum result within: \n ", lst_karif[0], "month", rem_day, "days")
     df_3.drop(["Area Rabi","Production Rabi","Yeild Rabi","percentage_rabi_growth"],axis=1,inplace=True)
     df_3 = df_3[df_3['percentage_karif_growth']>=10]
     out_karif()
 if month == 8:
     day = int(input("Enter day"))
     rem_day = 31 - day
-    print(rem_day,"day ",lst_karif[1],"month remaing for grow")
+    print("Optimum result within: \n ", lst_karif[1], "month", rem_day, "days")
     df_3.drop(["Area Rabi","Production Rabi","Yeild Rabi","percentage_rabi_growth"],axis=1,inplace=True)
     df_3 = df_3[df_3['percentage_karif_growth']>=10]
     out_karif()
 if month == 9:
     day = int(input("Enter day"))
     rem_day = 31 - day
-    print(rem_day,"day ",lst_karif[2],"month remaing for grow")
+    print("Optimum result within: \n ", lst_karif[2], "month", rem_day, "days")
     df_3.drop(["Area Rabi","Production Rabi","Yeild Rabi","percentage_rabi_growth"],axis=1,inplace=True)
     df_3 = df_3[df_3['percentage_karif_growth']>=10]
     out_karif()
 if month == 10:
     day = int(input("Enter day"))
     rem_day = 31 - day
-    print(rem_day,"day ",lst_karif[3],"month remaing for grow")
+    print("Optimum result within: \n ", lst_karif[3], "month", rem_day, "days")
     df_3.drop(["Area Rabi","Production Rabi","Yeild Rabi","percentage_rabi_growth"],axis=1,inplace=True)
     df_3 = df_3[df_3['percentage_karif_growth']>=10]
     out_karif()
