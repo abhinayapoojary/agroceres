@@ -27,23 +27,23 @@
 <nav class="navbar navbar-dark orange lighten-1">
     <a class="navbar-brand" href="#">
         <img src="{% static "logo.png" %}" height="30" class="d-inline-block align-top"
-             alt="mdb logo"> <b>AGROCERES | SELECT CROP</b>
+             alt="mdb logo"> <b>AGROCERES | SELECT CROP DISTRICT</b>
     </a>
 </nav>
 
 <div class="container mt-5 main-block">
-    <form method="post" action="{% url 'select_crop' %}">
+    <form method="post" action="{% url 'select_crop_district' %}">
     <div class="row">
-        {% for crop in crops %}
+        {% for crop_district in crop_districts %}
             <div class="col-md-4 mb-2">
                 <div class="card">
                     <div class="row no-gutters">
                         <div class="col-md-12">
                             <div class="card-body">
                                 <h5 class="card-title">
-                                    <input type="radio" class="custom-control-input" name={{ crop }}
-                                            id={{ crop }} value={{ crop }}>
-                                    <label class="custom-control-label" for={{ crop }}>{{ crop }}</label>
+                                    <input type="radio" class="custom-control-input" name={{ crop_district }}
+                                            id={{ crop_district }} value={{ crop_district }}>
+                                    <label class="custom-control-label" for={{ crop_district }}>{{ crop_district }}</label>
                                 </h5>
                             </div>
                         </div>

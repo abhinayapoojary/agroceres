@@ -27,5 +27,8 @@ urlpatterns = [
     path(r'select_mandal/', views.select_mandal, name='select_mandal'),
     path(r'select_month/', views.select_month, name='select_month'),
     path(r'list_crop/', views.get_crops, name='list_crop'),
+    path(r'select_crop/', views.get_crop_type, name='select_crop'),
+    path(r'select_crop_type/', views.get_crop_district, name='select_crop_type'),
+    path(r'select_crop_district/', views.get_crop_district_result, name='select_crop_district'),
 
 ]

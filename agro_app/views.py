@@ -6,6 +6,9 @@ from agro_app import list_mandal
 from agro_app import process_mandal
 from agro_app import process_month
 from agro_app import list_crop
+from agro_app import list_crop_type
+from agro_app import list_crop_districts
+from agro_app import crop_district_result
 
 @csrf_exempt
 def display(request):
@@ -34,11 +37,12 @@ def area_under_growth(request):
         print(selected_districts)
         return render(request, 'area_under_growth.html', {"districts": selected_districts})
 
+
 @csrf_exempt
 def mandal(request, dist):
-        print(dist)
-        mandals = list_mandal.list_mandal(dist)
-        return render(request, 'list_mandal.html',{"mandals": mandals})
+    print(dist)
+    mandals = list_mandal.list_mandal(dist)
+    return render(request, 'list_mandal.html', {"mandals": mandals})
 
 
 @csrf_exempt
@@ -64,7 +68,47 @@ def select_month(request):
         return HttpResponse(response, status=200)
 
 
+@csrf_exempt
 def get_crops(request):
     if request.method == 'GET':
         crops = list_crop.list_crop()
         return render(request, 'select_crop.html', {"crops": crops})
+
+
+@csrf_exempt
+def get_crop_type(request):
+    if request.method == 'POST':
+        selected_crop = []
+        for key, value in request.POST.items():
+            selected_crop.append(key)
+
+        crop_types = list_crop_type.get_crop_types(selected_crop[0])
+
+        return render(request, 'list_crop_types.html', {"crop_types": crop_types})
+
+
+@csrf_exempt
+def get_crop_district(request):
+    if request.method == 'POST':
+        selected_crop_type = []
+        for key, value in request.POST.items():
+            selected_crop_type.append(key)
+
+        print(selected_crop_type)
+        crop_districts = list_crop_districts.get_crop_district(selected_crop_type[0])
+
+        print(crop_districts)
+    return render(request, 'list_crop_district.html', {"crop_districts": crop_districts})
+
+
+@csrf_exempt
+def get_crop_district_result(request):
+    if request.method == 'POST':
+        selected_crop_district = []
+        for key, value in request.POST.items():
+            selected_crop_district.append(key)
+
+        crop_result = crop_district_result.get_result(selected_crop_district[0])
+
+        print(crop_result)
+    return render(request, 'index.html')

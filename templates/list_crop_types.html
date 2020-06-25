@@ -27,14 +27,14 @@
 <nav class="navbar navbar-dark orange lighten-1">
     <a class="navbar-brand" href="#">
         <img src="{% static "logo.png" %}" height="30" class="d-inline-block align-top"
-             alt="mdb logo"> <b>AGROCERES | SELECT CROP</b>
+             alt="mdb logo"> <b>AGROCERES | SELECT CROP TYPE</b>
     </a>
 </nav>
 
 <div class="container mt-5 main-block">
-    <form method="post" action="{% url 'select_crop' %}">
+    <form method="post" action="{% url 'select_crop_type' %}">
     <div class="row">
-        {% for crop in crops %}
+        {% for crop in crop_types %}
             <div class="col-md-4 mb-2">
                 <div class="card">
                     <div class="row no-gutters">
