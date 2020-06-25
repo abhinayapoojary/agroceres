@@ -118,9 +118,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
-STATIC_URL = '/home/alone/PycharmProjects/agroceres/static/'
-GRAPH_URL = '/home/alone/PycharmProjects/agroceres/agro_app/graphs/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = BASE_DIR + '/static/'
+GRAPH_URL = BASE_DIR + '/agro_app/graphs/'
 
 STATICFILES_DIRS = [
     STATIC_URL,
