@@ -21,7 +21,7 @@ def prt(merge):
         LON = str(merge.loc[bang[z], 'logitude'])
 
         return "Date", DAY, MONTH, YEAR,"Crop and its type", COM_NAME, VAR_NAME,"\nMarket Name", MAR, "Max value",MAX, "\nMin value",MIN,"\nModel value", MOD,"\nDistrict", DIST
-        webbrowser.open('https://maps.googleapis.com/maps/api/staticmap?zoom=12&size=640x640&maptype=roadmap&markers=size:mid|color:red|' + LAT + ',' + LON + '&key=AIzaSyAnyLkZp1r7mBv99wE3stsTv0tzuUcF3Bw')
+        webbrowser.open('https://maps.googleapis.com/maps/api/staticmap?zoom=12&size=640x640&maptype=roadmap&markers=size:mid|color:red|' + LAT + ',' + LON + '&key=your_api_key')
 
 
 def get_result(district):
